@@ -4,10 +4,249 @@
 <meta charset="UTF-8">
     <title></title>
     <style>
+     <style>
+        
+           /* Target only the header navigation */
+header {
+    background-color: #a48724; /* Dark blue background */
+    padding: 20px 0;
+    box-shadow: 0 11px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+/* Style the nav and list */
+header nav ul {
+    list-style:none;
+    display: flex;
+    justify-content: center; /* center menu items horizontally */
+    margin: 0;
+    padding: -5px;
+    gap: 53px; /* space between items */
+}
+
+header nav ul li a {
+    color: #ffffff; /* white text */
+    text-decoration: none; 
     
+    font-weight: bold;
+    padding: 0px 62px;
+    border-radius: 62px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+header nav ul li a:hover {
+    background-color: rgba(123, 13, 13, 0.91); 
+    color: #004080;
+}
+       p{
+           font-size: 20px; 
+       }
+       
+       .hero {
+    height: 71vh; /* full viewport height */
+    background-image: url('caption.jpg'); /* replace with your image path */
+    background-size: cover; /* cover the entire section */
+    background-position: center; /* center the image */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Optional overlay for better text readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* above overlay */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 12px 21px;
+    font-size: 1.1rem;
+    color: #004080;
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #004080;
+    color: #ffffff;
+}
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  caption {
+    caption-side: top;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tbody tr:hover {
+    background-color: #d1e7dd;
+    transition: 0.3s;
+  }
+       .hero table thead th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 19px 27px;
+    text-align: center;
+    font-size: 17px;
+}
     </style>
     </head>
     <body>
-    
+        <header>
+        <nav>
+        <ul>
+            <li>
+            <a href="home.html">Home</a>
+              <a href="basic phrases.html">Basic Phrase</a>  
+                <a href="audio page.html">Audio Page</a>
+                <a href="Culture and Stories.html">Culture and Stories</a>
+                <a href="Heritage Locations.html">Heritage Location</a>
+                <a href="quiz page.html">Quiz Page</a>
+            </li>
+            </ul>
+        </nav>
+        </header>
+        
+        
+    <table>
+  <caption>Key Facts about the Abasuba / Ebihingo ebikuru ku Abasuba</caption>
+  <thead>
+    <tr>
+      <th>Category (English)</th>
+      <th>Details (English)</th>
+      <th>Ekisuba</th>
+      <th>Ebisinga / Ebisinga by’obulamu (Ekisuba)</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Origin</td>
+      <td>The Abasuba are a Bantu ethnic group who migrated from Uganda over 500 years ago, crossing Lake Victoria to settle on islands like Rusinga and Mfangano in Kenya.</td>
+      <td>Okutoka</td>
+      <td>Abasuba balekireko ku Uganda okuyo obukadde 500 emyaka egisooka, nebagenda ku nnono za Rusinga ne Mfangano mu Kenya.</td>
+    </tr>
+
+    <tr>
+      <td>Location</td>
+      <td>The highest concentration of Abasuba people is found on Rusinga and Mfangano islands in Lake Victoria, in Kenya's Homa Bay and Migori Counties.</td>
+      <td>Ekifo</td>
+      <td>Abasuba bangi balina ku nnono za Rusinga ne Mfangano mu Lake Victoria, mu Homa Bay ne Migori Counties.</td>
+    </tr>
+
+    <tr>
+      <td>Endangered language</td>
+      <td>The Suba language is listed by UNESCO as endangered due to assimilation with the Luo through intermarriage and cultural influence.</td>
+      <td>Lulimi olukyusibwa</td>
+      <td>Lulimi lwa Suba lukyusibwa nga UNESCO lutwala nga lukyusibwa olw’okukyusa mu Luo mu mbuto n’eby’obulamu.</td>
+    </tr>
+
+    <tr>
+      <td>Revitalization efforts</td>
+      <td>Community-led efforts such as Ekialo Kiona Youth Radio (Umoja Radio for Peace) help preserve Suba language and culture.</td>
+      <td>Okutumbula lulimi</td>
+      <td>Ebikozesebwa eby’abantu nga Ekialo Kiona Youth Radio ku Mfangano biriko okukolera ku kutereka n’okutumbula lulimi lwa Suba.</td>
+    </tr>
+
+    <tr>
+      <td>Cultural heritage</td>
+      <td>The Abasuba have rich cultural heritage including storytelling, music, cuisine, and ceremonies like rainmaking.</td>
+      <td>Omulimu ogw’ensiko</td>
+      <td>Abasuba balina eby’obuwangwa okuli ebigambo, enyimba, mmere, n’emikolo ng’okubaga emitala egyekolerwa amaggulu.</td>
+    </tr>
+
+    <tr>
+      <td>Traditional economy</td>
+      <td>They were fishermen, boat builders, and farmers, and once renowned hippo hunters.</td>
+      <td>Obulimi bw’okwenyigira</td>
+      <td>Mu biseera ebyakadde, Abasuba baali abakazi b’amato, abalimi, n’abavubi era baali bakwatagana n’okulwanyisa enswa.</td>
+    </tr>
+
+    <tr>
+      <td>Notable people</td>
+      <td>Tom Mboya, a famous independence activist and cabinet minister, was from the Abasuba community.</td>
+      <td>Abantu abamanyiddwa</td>
+      <td>Omuntu amanyiddwa mu Abasuba ye Tom Mboya, omulwanirira obwenzi era nga minister omukulu mu Kenya.</td>
+    </tr>
+  </tbody>
+</table>
+
+          
+          
     </body>
 </html>
